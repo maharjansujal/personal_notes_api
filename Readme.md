@@ -1,47 +1,74 @@
 # Personal Notes API
 
-The Personal Notes API is a RESTful service that allows users to manage personal notes. It supports creating, retrieving, updating, and deleting notes. The notes are stored in local JSON file for persistence, and various middleware functions are used for logging requests, validating input, and handling errors.
+## Table of Contents
 
-## How to run
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+  - [GET /api/notes](#get-apinotes)
+  - [GET /api/notes/:id](#get-apinotesid)
+  - [POST /api/notes](#post-apinotes)
+  - [PUT /api/notes/:id](#put-apinotesid)
+  - [PATCH /api/notes/:id](#patch-apinotesid)
+  - [DELETE /api/notes/:id](#delete-apinotesid)
+- [Middleware](#middleware)
+- [Contributing](#contributing)
+- [License](#license)
 
-1.  Navigate to the main directory and open terminal
+## Features
 
-2.  Write the following commands
+* CRUD Operations: Create, Read, Update, and Delete notes.
+* Validation: Basic validation for note creation and updates.
+* Logging: Logs each request with method and URL.
+* Error Handling: Handles errors and sends appropriate responses.
+## Installation
+1. Clone the Repository
+<pre>
+```js
+git clone https://github.com/your-username/personal-notes-api.git
+cd personal-notes-api
+```
+</pre>
 
-        npm install express cors nodemon
+## Usage
 
-3.  Then to run the project
-
-        npm run dev
+...
 
 ## API Endpoints
 
--   Get Notes: /api/notes
--   Get a note: /api/notes/:id
--   Add note: /api/notes
--   Update note: /api/notes/:id
--   Delete a note: /api/notes/:id
+### GET /api/notes
 
-## Postman URL
+...
 
-In order to add and update a note, you need to pass data through the request body to make changes.
+### GET /api/notes/:id
 
-### Get notes
+...
 
-    GET | http://localhost:3000/api/tasks
+### POST /api/notes
 
-### Get a note by id
+...
 
-    GET | http://localhost:3000/api/tasks/1
+### PUT /api/notes/:id
 
-### Add a note
+...
 
-    POST | http://localhost:3000/api/task
+### PATCH /api/notes/:id
 
-### Update a note
+...
 
-    PUT | http://localhost:3000/api/task/1
+### DELETE /api/notes/:id
 
-### Delete a note
+...
 
-    DELETE | http://localhost:3000/api/task/1
+## Middleware
+
+...
+
+## Contributing
+
+...
+
+## License
+
+...
