@@ -24,19 +24,18 @@
 * Error Handling: Handles errors and sends appropriate responses.
 ## Installation
 1. Clone the Repository
-```c
+```bash
 git clone https://github.com/maharjansujal/personal_notes_api.git
-cd personal-notes-api
 ```
 2. Install Dependencies
 Ensure that you have Node.js installed. Run the following command to install dependencies:  
-```c
+```bash
 npm install
 ```
 ## Usage
 
 1. Start the Server
-```c
+```bash
 npm start
 ```
 The server will start on '**http://localhost:3000**'.
