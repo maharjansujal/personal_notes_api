@@ -1,0 +1,18 @@
+PERSONAL-NOTES-API/
+    data/
+        db.json
+    node_modules/
+    src/
+        controller/
+                    notesController.js
+        middleware/
+                    errorHandler.js
+                    logger.js
+                    validator.js
+        routes/
+                    notesRoutes.js
+        app.js
+        .gitignore
+        package.json
+        package-lock.json
+        Readme.md
