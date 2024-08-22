@@ -24,8 +24,11 @@
 * Error Handling: Handles errors and sends appropriate responses.
 ## Installation
 1. Clone the Repository
+        ```javascript
         git clone https://github.com/your-username/personal-notes-api.git
         cd personal-notes-api
+
+        
         
 ## Usage
 
