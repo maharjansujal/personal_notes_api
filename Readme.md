@@ -24,50 +24,85 @@
 * Error Handling: Handles errors and sends appropriate responses.
 ## Installation
 1. Clone the Repository
-```javascript
-git clone https://github.com/your-username/personal-notes-api.git
+```c
+git clone https://github.com/maharjansujal/personal_notes_api.git
 cd personal-notes-api
 ```
-        
-        
+2. Install Dependencies
+Ensure that you have Node.js installed. Run the following command to install dependencies:  
+```c
+npm install
+```
 ## Usage
 
-...
+1. Start the Server
+```c
+npm start
+```
+The server will start on '**http://localhost:3000**'.
 
-## API Endpoints
+2. API testing
 
-### GET /api/notes
+Use tools like Postman or curl to interact with the API endpoints.
 
-...
+### API End points
 
-### GET /api/notes/:id
+## GET /api/notes
+* **Description**: Retrives all notes
+* Response: '**200 OK**' with a list of notes.
 
-...
+### GET /api/notes/
+* **Description**: Retrieve a note by ID.
+* Parameters:
+* id (path): The ID of the note.
+* Response: '**200 OK**' with the note data or '**404 Not Found**' if the note does not exist.
 
 ### POST /api/notes
-
-...
+* **Description**: Create a new note.
+* **Request Body**:
+```json
+{
+  "title": "Note Title",
+  "content": "Note Content"
+}
+```
+* **Response**: **201** Created with the created note.
 
 ### PUT /api/notes/:id
-
-...
+* **Description**: Replaces the entire note with the specified ID.
+* **Request Body**:
+```json
+{
+  "title": "New Title",
+  "content": "New Content"
+}
+```
+* **Response**: '**200 OK**' with the updated note or 404 Not Found if the note does not exist.
 
 ### PATCH /api/notes/:id
-
+* **Description**: Partially update a note.
+* **Request Body**:
+```json
+{
+  "title": "Updated Title"
+}
+```
+* **Response**: '**200 OK**' with the updated note or 404 Not Found if the note does not exist.
 ...
 
 ### DELETE /api/notes/:id
-
+* **Description**: Partially update a note.
+* **Parameters**:
+    * '**id**' (path): The ID of the note.
+* **Response**: '**200 OK**' with a success message or 404 Not Found if the note does not exist.
 ...
 
 ## Middleware
 
-...
+* **Logger**: Logs each request with method and URL.
+* **Error Handler**: Catches and responds to errors.
+* **Validator**: Validates request bodies and parameters.
 
 ## Contributing
 
-...
-
-## License
-
-...
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
