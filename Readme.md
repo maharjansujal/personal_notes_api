@@ -25,7 +25,7 @@
 ## Installation
 1. Clone the Repository
 <pre>
-```js
+```javascript
 git clone https://github.com/your-username/personal-notes-api.git
 cd personal-notes-api
 ```
